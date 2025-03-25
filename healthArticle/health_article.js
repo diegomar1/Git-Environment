@@ -7,8 +7,8 @@ xhr.responseType = 'json';
 xhr.onload = function() {
 
     var articles = xhr.response.articles;
-var articlesDiv = document.getElementById('articles');
- };
+    var articlesDiv = document.getElementById('articles');
+ 
 
 //Iterating through articles and constructing HTML
 
@@ -51,5 +51,7 @@ var articlesDiv = document.getElementById('articles');
 
     articlesDiv.appendChild(articleDiv);
   });
+
+};
 
   xhr.send();
